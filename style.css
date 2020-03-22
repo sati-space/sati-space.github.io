@@ -1,0 +1,81 @@
+@import
+	url('https://fonts.googleapis.com/css?family=Kulim+Park&display=swap');
+
+
+#main-doc {
+	font-family: 'Kulim Park', sans-serif;
+	display: flex;
+	flex-direction: column;
+	order: 2;
+	width: 80%;
+	margin-left: 230px;
+	margin-right: auto;
+	border-left: 2px solid #666;
+	padding-left: 15px
+}
+
+.main-section {
+	text-align: justify;
+}
+
+.header {
+	text-align: justify;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#pre {
+	background-color: #EEE;
+	display: block;
+	margin: 1em;
+}
+
+#code {
+	margin-left: 2em;
+	margin-top: -1em;
+	margin-bottom: -2em;
+}
+
+#navbar *{
+	font-family: 'Kulim Park', sans-serif;
+	color: inherit;
+	text-decoration: none;
+}
+
+.menu-header {
+	text-align: justify;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: 'Kulim Park', sans-serif;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #666;
+	margin-bottom: 10px;
+}
+
+.nav-link {
+	padding: 6px 8px 6px 1px;
+	display: block;
+	border-bottom: 1px solid #666;
+	margin-top: 10px;
+}
+
+#navbar {
+	display: flex;
+	flex-direction: column;
+	order: 1;
+	flex: 35%;
+	position: fixed;
+}
+
+#wrapper {
+	display: flex;
+	padding: 5px;
+	flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
+	#navbar, #main-doc{
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+}
